@@ -51,6 +51,17 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
 -- Pines para el servo Motor 
 
     servoMotor=> PIN_52
+    
+ # Terminar lo de los pines 
+ 
+ 
+ # Avances del proyecto
+ 
+ # Avances del proyecto
+
+Un avance del proyecto es el funcionamiento de los sensores de ultrasonido. En este caso se estan probando dos de los sensores. 
+Esto se puede observar en el video llamado "Avances de los sensores de ultrasonido.mp4". Como en el video se explica lo que se hace es que el sensor verifica si hay un objeto y deacuerdo a ello cambia el contador, un contador para estacionamientos vacios para personas con discapacidad y otro contador para estacionamientos vacios para personas sin condición de discapacidad. 
+
 
 
 
