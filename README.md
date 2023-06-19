@@ -42,7 +42,7 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
     EchoSenUlt[2] => PIN_28
     EchoSenUlt[1] => PIN_33
     EchoSenUlt[0] => PIN_30
-    
+            
     TrigSenUlt[3] => PIN_39
     TrigSenUlt[3] => PIN_31
     TrigSenUlt[3] => PIN_38
@@ -50,12 +50,29 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
     
 -- Pines para el servo Motor 
 
-    servoMotor=> PIN_52
+    servoMotor => PIN_52
     
+ -- Pines para los siete segmentos siendo ti1 y ti2 las tierras de los siete segmantos
+    
+    S0 => PIN_119
+    S1 => PIN_120
+    S2 => PIN_121
+    S3 => PIN_124
+    S4 => PIN_125
+    S5 => PIN_126
+    S6 => PIN_127
+    
+    ti1 => PIN_129
+    ti2 => PIN_128
+      
+-- Pines de el lector RFID
+
+    senalLectorRFTD => PIN_54
+    senalLectorRFTD1 => PIN_55
+
  # Terminar lo de los pines 
  
  
- # Avances del proyecto
  
  # Avances del proyecto
 
