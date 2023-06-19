@@ -104,6 +104,21 @@ Para el sensor de ultra sonido, lo primero que se hace es crear un divisor de fr
 De acuerdo a esas condiciones, luego nos interesa mirar según la señal del Echo como está el contador principal, entre menor sea el número de estee, más alejado está el objeto, de manera análoga, entre más cerca este el objeto mayor será el contador. Y conforme a eso se toma una señal de salida. 
 
 B. Pantalla LCD 
+
+Para la pantalla LCD se descargó la librería para vhdl de 8 bits. Luego de ello, se definieron el número de instrucciones a utilizar, siendo las dos primeras la inicialización de la pantalla, luego los caracteres que se querían utilizar y por último se indica donde acaban las instrucciones. 
+
+C. ServoMotor
+
+D. Lector RFID
+
+E. Luces Led
+
+Deacuerdo a los sensores de ultrasonido, se realiza una pequeña cadena de if, en la cuál dependiendo de si se detecta un objeto o no en el sensor del ultradonido se prenden ciertos leds. 
+
+F. Siete segmentos
+
+Para los siete segmentos, fue necesario crear dos tierras, para lo cual se utilizó un multiplexor, cuya señal de control es la tierra y deacuerdo a ello se enciende uno u otro siete segmentos. Deacuerdo con esto ya se hizó la parte de una cadena de if para verificar cuales de los sensores de ultrasonido detectan un objeto, con esto se le da un valor en codigo BCD y luego se realiza la decodificación para llevarlo a los siete segmentos. 
+
  
  # Avances del proyecto
 
