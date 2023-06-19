@@ -70,12 +70,12 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
     senalLectorRFTD => PIN_54
     senalLectorRFTD1 => PIN_55
 
- # Terminar lo de los pines 
+
  
  
- # Como se realizó el proyecto 
+ # Cómo se realizó el proyecto 
  
- Para el proyecto se realizó una maquina de estados algoritmica como se observa en la imagen 
+ Para el proyecto se realizó una maquina de estados algoritmica como se observa en la siguiente imagen 
  
  
  
