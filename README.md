@@ -78,15 +78,32 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
  Para el proyecto se realizó una maquina de estados algoritmica como se observa en la imagen 
  
  
-a. Sensor de ultrasonido
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De manera que, para realizar la implementación de cada periferico se hizo lo siguiente:
+
+A. Sensor de ultrasonido
 
 Para el sensor de ultra sonido, lo primero que se hace es crear un divisor de frecuencia, esto con el fin de tener una frecuencia de     microsegundos, luego de esto, se mira que cada vez que halla un franco de subida de la señal de microsegundos, se va a revisar una       serie de condiciones que son las siguientes:
+
 1. Existe un contador auxiliar, mientras este contador esté entre 0 y 10 se manda un tren de pulsos desde el trigger, para enviar          este tren de pulsos el trigger se pone en 1. 
+
 2. Mientras el contador inicial está en 0 el contador principal se inicializa en 0. 
+
 3. Si el Echo recibe un 1 que significa que captó la señal del trigger reflejada, se aumenta el contador principal. 
+
 4. Si el contador auxiliar llega a 249999 se debe reiniciar el contador auxiliar para enviar de nuevo un tren de pulsos, es decir,        si han pasado 0.249 segundos, en los que no se cumplen las condiciones anteriores (0.247 segundos en que no se recibe la señal           del trigger por el echo se vuelve a mandar la señal del trigger).
+
 5. El contador auxiliar debe ir aumentando mientras no cumpla las anteriores condiciones.
 
+De acuerdo a esas condiciones, luego nos interesa mirar según la señal del Echo como está el contador principal, entre menor sea el número de estee, más alejado está el objeto, de manera análoga, entre más cerca este el objeto mayor será el contador. Y conforme a eso se toma una señal de salida. 
+
+B. Pantalla LCD 
  
  # Avances del proyecto
 
