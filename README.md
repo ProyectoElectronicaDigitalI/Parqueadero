@@ -109,6 +109,8 @@ Para la pantalla LCD se descargó la librería para vhdl de 8 bits. Luego de ell
 
 C. ServoMotor
 
+El servomotor funciona en base a una señal que depende del ciclo util, este ciclo util es el que varia la posición del Servo Motor. Luego, en el codigo se relizó un pwm deacuerdo a una señal que se ingresa (selector) con el cual se cambia el ciclo util de una señal, que será la salida (PWM), y deacuerdo a esta salida se generará el movimiento del servo motor. 
+
 D. Lector RFID
 
 E. Luces Led
@@ -118,6 +120,8 @@ Deacuerdo a los sensores de ultrasonido, se realiza una pequeña cadena de if, e
 F. Siete segmentos
 
 Para los siete segmentos, fue necesario crear dos tierras, para lo cual se utilizó un multiplexor, cuya señal de control es la tierra y deacuerdo a ello se enciende uno u otro siete segmentos. Deacuerdo con esto ya se hizó la parte de una cadena de if para verificar cuales de los sensores de ultrasonido detectan un objeto, con esto se le da un valor en codigo BCD y luego se realiza la decodificación para llevarlo a los siete segmentos. 
+
+
 
  
  # Avances del proyecto
