@@ -62,6 +62,11 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
 Un avance del proyecto es el funcionamiento de los sensores de ultrasonido. En este caso se estan probando dos de los sensores. 
 Esto se puede observar en el video llamado "Avances de los sensores de ultrasonido.mp4". Como en el video se explica lo que se hace es que el sensor verifica si hay un objeto y deacuerdo a ello cambia el contador, un contador para estacionamientos vacios para personas con discapacidad y otro contador para estacionamientos vacios para personas sin condición de discapacidad. 
 
+Otro avance se observa en el video "Avance del servoMotor.mp4" en el cual, dependiendo de una configuración de pines en la fpga se mueve el servomotor, este servomotor se usará para permitir o no el paso o ingreso al parqueadero. 
+
+Otro avance es el video "Avance de la pantalla LCD.mp4" en este video se ve como se escribe good en la pantalla, donde dependiendo del capacitor se varía el brillo de esta y se permite ver mejor o no la letra que está escrita. 
+
+
 
 
 
