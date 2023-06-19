@@ -129,13 +129,25 @@ Para los siete segmentos, fue necesario crear dos tierras, para lo cual se utili
 Un avance del proyecto es el funcionamiento de los sensores de ultrasonido. En este caso se estan probando dos de los sensores. 
 Esto se puede observar en el video llamado "Avances de los sensores de ultrasonido.mp4". Como en el video se explica lo que se hace es que el sensor verifica si hay un objeto y deacuerdo a ello cambia el contador, un contador para estacionamientos vacios para personas con discapacidad y otro contador para estacionamientos vacios para personas sin condición de discapacidad. 
 
+
+https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/e90f4291-cd2a-4f11-b272-2a990b862f99
+
+
+
 Otro avance se observa en el video "Avance del servoMotor.mp4" en el cual, dependiendo de una configuración de pines en la fpga se mueve el servomotor, este servomotor se usará para permitir o no el paso o ingreso al parqueadero. 
+
+
+
+
+https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/0990db3b-26b5-465f-880e-21ee5bcb1639
+
+
 
 Otro avance es el video "Avance de la pantalla LCD.mp4" en este video se ve como se escribe good en la pantalla, donde dependiendo del capacitor se varía el brillo de esta y se permite ver mejor o no la letra que está escrita. 
 
 
 
-
+https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/143900f9-2931-4657-9060-2d843d8b933f
 
 
 
