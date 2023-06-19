@@ -73,6 +73,10 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
  # Terminar lo de los pines 
  
  
+ # Como se realizó el proyecto 
+ 
+ Para el proyecto se realizó una maquina de estados algoritmica como se observa en la imagen 
+ 
  
  # Avances del proyecto
 
