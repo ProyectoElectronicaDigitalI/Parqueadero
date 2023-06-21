@@ -1,4 +1,11 @@
-# Parqueadero 
+# Parqueadero Automatizado 
+
+Autores:
+
+- Manuel Felipe Carranza Montenegro
+- Alejandro Mahecha Arango 
+- Paula Daniela Ortiz Cuervo
+
 
 # Contexto 
 En Colombia existe una falta de cultura ciudadana en cuanto al respeto de aquellos lugares que se designaron para el estacionamiento exclusivo de personas en condición de discapacidad, ya que, a pesar de que estos lugares están señalizados, existen muchas personas que evaden esta normativa y estacionan sus vehículos en dichos lugares evitando una buena convivencia ciudadana. Además, las luces aun cuando no hay objetos en movimiento estan encendidas generando un desperdicio de energía
@@ -15,7 +22,7 @@ Los objetivos secundarios son:
 2. Implementar un sistema que encienda las luces cuando detecte la presencia de un automóvil.    
 
 
- # Cómo se realizó el proyecto 
+ # Diseño
  
  Para el proyecto se realizó una maquina de estados algoritmica como se observa en la siguiente imagen 
  
@@ -31,7 +38,7 @@ De manera que, para realizar la implementación de cada periferico se hizo lo si
 
 A. Sensor de ultrasonido
 
-Para el sensor de ultra sonido, lo primero que se hace es crear un divisor de frecuencia, esto con el fin de tener una frecuencia de     microsegundos, luego de esto, se mira que cada vez que halla un franco de subida de la señal de microsegundos, se va a revisar una       serie de condiciones que son las siguientes:
+Para el sensor de ultra sonido, lo primero que se hace es crear un divisor de frecuencia, esto con el fin de tener una frecuencia de     microsegundos, luego de esto, se mira que cada vez que halla un flanco de subida de la señal de microsegundos, se va a revisar una       serie de condiciones que son las siguientes:
 
 1. Existe un contador auxiliar, mientras este contador esté entre 0 y 10 se manda un tren de pulsos desde el trigger, para enviar          este tren de pulsos el trigger se pone en 1. 
 
