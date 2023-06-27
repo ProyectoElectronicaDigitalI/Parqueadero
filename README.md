@@ -21,7 +21,14 @@ Los objetivos secundarios son:
 
 2. Implementar un sistema que encienda las luces cuando detecte la presencia de un automóvil.    
 
+ # Video Funcionamiento
 
+Un video mostrando el funcionamiento del parqueadero es el siguiente :
+
+https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/a993ca85-be51-4a79-aad9-e6c09c588d87
+
+
+ 
  # Diseño
  
  Para el proyecto se realizó una maquina de estados algoritmica como se observa en la siguiente imagen 
