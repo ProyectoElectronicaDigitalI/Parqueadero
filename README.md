@@ -28,8 +28,9 @@ Los objetivos secundarios son:
  
  
  
- 
- 
+ ![Diagrama sin título drawio](https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/418529f1-3701-472a-95b0-7b152010935e)
+
+ Y se tiene el siguiente diagrama de bloques. 
  
  
  
@@ -64,7 +65,18 @@ El servomotor funciona en base a una señal que depende del ciclo util, este cic
 
 D. Lector RFID
 
-# Hacer esto con Manuelito
+El código utiliza la biblioteca MFRC522 para el lector de tarjetas RFID (RC522) donde controla el nivel alto o bajo en función de las tarjetas RFID detectadas o no. El funcionamiento es el siguiente:
+
+1. Se incluyen las bibliotecas necesarias para el uso del lector de tarjetas RFID (RC522) y la comunicación SPI.
+   
+2. Se definen los pines utilizados y los pines de salida para la fpga.
+
+3. Se crea un objeto MFRC522 llamado mfrc522 utilizando los pines definidos anteriormente.
+   
+4. En la función setup(), se inicia la comunicación serial y SPI, se inicializa el RC522 y se configuran los pines de la fpga como salidas.
+  
+5. En la función loop(), se verifica si hay una tarjeta presente y se le asigna 1 a la salida (nivel alto) enviando un tren de dos pulsos.
+
 
 E. Luces Led
 
