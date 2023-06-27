@@ -32,7 +32,8 @@ Los objetivos secundarios son:
 
  Y se tiene el siguiente diagrama de bloques. 
  
- 
+ ![WhatsApp Image 2023-06-27 at 4 42 29 PM](https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/87abee96-b723-4b72-abe8-f2197886aadb)
+
  
  
 De manera que, para realizar la implementación de cada periferico se hizo lo siguiente:
@@ -101,7 +102,15 @@ Finalmente, teniendo ya todos los sensores se realizó lo siguiente:
 
 # Simulaciones
 
+se hizo una simulacion de los sensores con el código BCD que es la siguientes:
+    
+ ![WhatsApp Image 2023-06-27 at 4 57 17 PM](https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/593562d8-504c-4ece-a9ff-fc6b0c6476fd)
  
+ y la simulación del servo con el lector RFID
+
+
+ ![Servo simulación](https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/bfb33e4c-c161-417d-bda9-88c2c15fc8c7)
+
  # Avances del proyecto
 
 Un avance del proyecto es el funcionamiento de los sensores de ultrasonido. En este caso se estan probando dos de los sensores. 
