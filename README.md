@@ -74,7 +74,17 @@ F. Siete segmentos
 
 Para los siete segmentos, fue necesario crear dos tierras, para lo cual se utilizó un multiplexor, cuya señal de control es la tierra y deacuerdo a ello se enciende uno u otro siete segmentos. Deacuerdo con esto ya se hizó la parte de una cadena de if para verificar cuales de los sensores de ultrasonido detectan un objeto, con esto se le da un valor en codigo BCD y luego se realiza la decodificación para llevarlo a los siete segmentos. 
 
+Finalmente, teniendo ya todos los sensores se realizó lo siguiente:
 
+1. Se crearon todas las señales necesarias, como entradas de los sensores y salidas del sistema, como los echo y trigger del sensor de ultrasonido, las señales del RFID, el clock, los leds. entre otras.
+   
+2. Se crearon todos los componentes, señales internas e instanciaciones.
+
+3. se creó un process donde se observan los flancos de subida de las señales RFID y dependiendo de ello se abre el servomotor y se prenden las luces del camino. y tambien, se observan los flancos de subida del clock de la fpga para actualizar el siete segmentos.
+
+4. Para el siete segmentos, se creó un modulo diferente donde se leen los flancos de subida de los sensores y con ellos se aumenta un contador, luego se crea un contador auxiliar donde se suman o restan los otros contadores y ese resultado se pasa por un case donde se le asigna el valor BCD que se pasará a los siete segmentos.
+
+5. se crea otro process para hacer un multiplexor para las tierras de los siete segmentos.
 
  
  # Avances del proyecto
@@ -103,17 +113,14 @@ Otro avance es el video "Avance de la pantalla LCD.mp4" en este video se ve como
 https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/143900f9-2931-4657-9060-2d843d8b933f
 
 
-Finalmente, teniendo ya todos los sensores se realizó lo siguiente:
 
-1. Se crearon todas las señales necesarias, como entradas de los sensores y salidas del sistema, como los echo y trigger del sensor de ultrasonido, las señales del RFID, el clock, los leds. entre otras.
-   
-2. Se crearon todos los componentes, señales internas e instanciaciones.
+Otro avance es un video donde se ven los sensores de ultrasonido en la maqueta que se realizó para simular el parqueadero. 
 
-3. se creó un process donde se observan los flancos de subida de las señales RFID y dependiendo de ello se abre el servomotor y se prenden las luces del camino. y tambien, se observan los flancos de subida del clock de la fpga para actualizar el siete segmentos.
 
-4. Para el siete segmentos, se creó un modulo diferente donde se leen los flancos de subida de los sensores y con ellos se aumenta un contador, luego se crea un contador auxiliar donde se suman o restan los otros contadores y ese resultado se pasa por un case donde se le asigna el valor BCD que se pasará a los siete segmentos.
 
-5. se crea otro process para hacer un multiplexor para las tierras de los siete segmentos.
+https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/00607ac1-56f2-44cb-8115-d2d194ee64b0
+
+
 
 # Implementación 
 
