@@ -68,7 +68,7 @@ D. Lector RFID
 
 E. Luces Led
 
-Deacuerdo a los sensores de ultrasonido, se realiza una pequeña cadena de if, en la cuál dependiendo de si se detecta un objeto o no en el sensor del ultradonido se prenden ciertos leds. 
+Deacuerdo a los sensores de ultrasonido, se realiza una pequeña cadena de if, en la cuál dependiendo de si se detecta un objeto o no en el sensor del ultrasonido se prenden ciertos leds. 
 
 F. Siete segmentos
 
@@ -84,7 +84,7 @@ Finalmente, teniendo ya todos los sensores se realizó lo siguiente:
 
 4. Para el siete segmentos, se creó un modulo diferente donde se leen los flancos de subida de los sensores y con ellos se aumenta un contador, luego se crea un contador auxiliar donde se suman o restan los otros contadores y ese resultado se pasa por un case donde se le asigna el valor BCD que se pasará a los siete segmentos.
 
-5. se crea otro process para hacer un multiplexor para las tierras de los siete segmentos.
+5. se crea otro proceso para hacer un multiplexor para las tierras de los siete segmentos.
   
 
 # Simulaciones
