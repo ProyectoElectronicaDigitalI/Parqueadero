@@ -27,7 +27,9 @@ Un video mostrando el funcionamiento del parqueadero es el siguiente :
 
 https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/a993ca85-be51-4a79-aad9-e6c09c588d87
 
+# Video explicando el funcionamiento
 
+https://drive.google.com/file/d/1fwyLbfMGOduUfkKHl8Czfe0cvFzkYFSm/view?usp=sharing
  
  # Diseño
  
