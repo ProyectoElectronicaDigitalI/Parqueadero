@@ -64,7 +64,7 @@ El servomotor funciona en base a una señal que depende del ciclo util, este cic
 
 D. Lector RFID
 
-#Hacer esto con Manuelito
+# Hacer esto con Manuelito
 
 E. Luces Led
 
