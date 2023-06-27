@@ -204,7 +204,10 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
 
 -- Pines para el camino de leds
 
-
+   LedsCamino[0]<=PIN_46
+   LedsCamino[1]<=PIN_43
+   LedsCamino[3]<=PIN_44
+   LedsCamino[4]<=PIN_42
  
  
 
