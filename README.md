@@ -38,7 +38,7 @@ De manera que, para realizar la implementación de cada periferico se hizo lo si
 
 A. Sensor de ultrasonido
 
-Para el sensor de ultra sonido, lo primero que se hace es crear un divisor de frecuencia, esto con el fin de tener una frecuencia de     microsegundos, luego de esto, se mira que cada vez que halla un flanco de subida de la señal de microsegundos, se va a revisar una       serie de condiciones que son las siguientes:
+Para el sensor de ultraonido se usó una libreria, debido a que se pensaba  que el sensor funcionara de la siguiente maneraa: primero que se hace es crear un divisor de frecuencia, esto con el fin de tener una frecuencia de     microsegundos, luego de esto, se mira que cada vez que halla un flanco de subida de la señal de microsegundos, se va a revisar una       serie de condiciones que son las siguientes:
 
 1. Existe un contador auxiliar, mientras este contador esté entre 0 y 10 se manda un tren de pulsos desde el trigger, para enviar          este tren de pulsos el trigger se pone en 1. 
 
@@ -52,6 +52,8 @@ Para el sensor de ultra sonido, lo primero que se hace es crear un divisor de fr
 
 De acuerdo a esas condiciones, luego nos interesa mirar según la señal del Echo como está el contador principal, entre menor sea el número de estee, más alejado está el objeto, de manera análoga, entre más cerca este el objeto mayor será el contador. Y conforme a eso se toma una señal de salida. 
 
+Sin embargo, presentaba errores debido a que se estaba presentando que no se enviaba un 0 digital sino que lo tomaba aleatoriamente. Con la librería se solucionó este problema, tomando un 0 y un 1 digital. 
+
 B. Pantalla LCD 
 
 Para la pantalla LCD se descargó la librería para vhdl de 8 bits. Luego de ello, se definieron el número de instrucciones a utilizar, siendo las dos primeras la inicialización de la pantalla, luego los caracteres que se querían utilizar y por último se indica donde acaban las instrucciones. 
@@ -61,6 +63,8 @@ C. ServoMotor
 El servomotor funciona en base a una señal que depende del ciclo util, este ciclo util es el que varia la posición del Servo Motor. Luego, en el codigo se relizó un pwm deacuerdo a una señal que se ingresa (selector) con el cual se cambia el ciclo util de una señal, que será la salida (PWM), y deacuerdo a esta salida se generará el movimiento del servo motor. 
 
 D. Lector RFID
+
+#Hacer esto con Manuelito
 
 E. Luces Led
 
@@ -98,6 +102,18 @@ Otro avance es el video "Avance de la pantalla LCD.mp4" en este video se ve como
 
 https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/143900f9-2931-4657-9060-2d843d8b933f
 
+
+Finalmente, teniendo ya todos los sensores se realizó lo siguiente:
+
+1. Se crearon todas las señales necesarias, como entradas de los sensores y salidas del sistema, como los echo y trigger del sensor de ultrasonido, las señales del RFID, el clock, los leds. entre otras.
+   
+2. Se crearon todos los componentes, señales internas e instanciaciones.
+
+3. se creó un process donde se observan los flancos de subida de las señales RFID y dependiendo de ello se abre el servomotor y se prenden las luces del camino. y tambien, se observan los flancos de subida del clock de la fpga para actualizar el siete segmentos.
+
+4. Para el siete segmentos, se creó un modulo diferente donde se leen los flancos de subida de los sensores y con ellos se aumenta un contador, luego se crea un contador auxiliar donde se suman o restan los otros contadores y ese resultado se pasa por un case donde se le asigna el valor BCD que se pasará a los siete segmentos.
+
+5. se crea otro process para hacer un multiplexor para las tierras de los siete segmentos.
 
 # Implementación 
 
@@ -154,6 +170,8 @@ Para la solución de esta problematica, se realizó un codigo en vhdl por medio 
 
     senalLectorRFTD => PIN_54
     senalLectorRFTD1 => PIN_55
+
+-- Pines para el camino de leds
 
 
  
