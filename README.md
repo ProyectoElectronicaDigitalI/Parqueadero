@@ -29,7 +29,7 @@ https://github.com/ProyectoElectronicaDigitalI/Parqueadero/assets/136981880/a993
 
 # Video explicando el funcionamiento
 
-https://drive.google.com/file/d/1fwyLbfMGOduUfkKHl8Czfe0cvFzkYFSm/view?usp=sharing
+https://youtu.be/y3Umc0qbR0I
  
  # Diseño
  
